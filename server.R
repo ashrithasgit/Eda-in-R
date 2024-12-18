@@ -29,7 +29,7 @@ server <- function(input, output, session) {
   
   output$table <- renderDT({
     req(data())
-    datatable(data(), options = list(pageLength = 5))
+    datatable(data(), options = list(pageLength = 10))
   })
   
   
